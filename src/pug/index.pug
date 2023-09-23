@@ -1,0 +1,103 @@
+extends templates/layout
+
+block head
+    title  a1
+    link(rel='preconnect' href='https://fonts.googleapis.com')
+    link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+    link(href='https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Unbounded:wght@700&display=swap' rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css2?family=Roboto&family=Unbounded:wght@700&display=swap' rel='stylesheet')
+    link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css")
+    link(rel="stylesheet", href="css/style.min.css")
+block content 
+    section.hero-section 
+        .hero-section__container.container
+            h1.hero-section__logo 
+                img(src="./images/logo.png", alt="logo")
+            .hero-section__header 
+                h2.hero-section__title Коллекционные издание
+                p.hero-section__subtitle Побеждайте легко, побеждайте стильно с новыми коллекционными изданиями «Аллодов Онлайн»!
+            .hero-section__char.hero-section__char_left
+                img(src="./images/player_woman.png", alt="player woman")
+            .hero-section__char.hero-section__char_right
+                img(src="./images/player_man.png", alt="player man")
+            .hero-section__boxes 
+                img(src="./images/boxes.png", alt="boxes")
+        .hero-section__blur.hero-section__blur_left
+        .hero-section__blur.hero-section__blur_right
+        .hero-section__blur.hero-section__blur_bottom
+    section.char-section
+        .char-section__container.container
+            .char-section__img 
+                img(src="./images/vito.png", alt="vito")
+            .char-section__info 
+                .char-section__info-title Набор "Посылка с контробандой"
+                .char-section__info-content 
+                    .char-section__table
+                        table 
+                            caption Vito skills
+                            col.col-first
+                            col.col-second
+                            col.col-third
+                            col.col-fourth
+                            thead 
+                                tr
+                                    th
+                                    th 
+                                    th 
+                                        .th-wrapper Бесплатные сервера
+                                    th
+                                        .th-wrapper Подписиочный сервер
+                            tbody 
+                                tr 
+                                    td
+                                        img(src="./images/icons/watch-icon.png", alt="watch icon")
+                                    td Игровое время
+                                    td -
+                                    td 30 дней
+                                tr 
+                                    td 
+                                        img(src="./images/icons/toolbox-icon.png", alt="toolbox icon")
+                                    td Запечатанный набор инструментов
+                                    td 1
+                                    td 1
+                                tr 
+                                    td
+                                        img(src="./images/icons/runa-icon.png", alt="runa icon")
+                                    td Хрупкая чистая руна 10-й ступени
+                                    td 1
+                                    td -
+                                tr 
+                                    td
+                                        img(src="./images/icons/symbol-icon.png", alt="symbol icon")
+                                    td Большой символ изобилия творца
+                                    td 10
+                                    td -
+                                tr 
+                                    td
+                                        img(src="./images/icons/battarey-icon.png", alt="battarey icon")
+                                    td Мана-батарея
+                                    td -
+                                    td 20
+                                tr 
+                                    td
+                                        img(src="./images/icons/memory-icon.png", alt="memory icon")
+                                    td Модуль памяти
+                                    td -
+                                    td 10
+                                tr 
+                                    td
+                                        img(src="./images/icons/vito-icon.png", alt="vito icon")
+                                    td Помощник Вито
+                                    td 1
+                                    td 1
+                    .char-section__card 
+                        .char-section__card-image 
+                            img(src="./images/box.png", alt="box")
+                        .char-section__card-content 
+                            .char-section__card-price 
+                                span.char-section__card-price-value 399
+                                span.cahr-section__card-price-currency ₽ 
+                            button.char-section__card-buy Приобрести
+block scripts 
+    script(src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js")
+    script(src="js/app.min.js") 
